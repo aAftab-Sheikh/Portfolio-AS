@@ -1,0 +1,39 @@
+.container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.container .box{
+    position: relative;
+    width: 20rem;
+    margin: 3rem;
+
+}
+.container .box:hover .img-box{
+    transform: translate(-1.5rem,-1.5rem);
+}
+.container .box:hover .content{
+    transform: translate(3.5rem,3.5rem);
+}
+.img-box{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100px;
+    height: 100px;
+    z-index: 2;
+    transform: all 2s ease-in-out;
+}
+.img-box img{
+    width: 20rem;
+    height: 20rem;
+    object-fit: cover;
+    resize: both;
+}
+h2{
+    color: black;
+    
+    margin-top: 250px;
+}
